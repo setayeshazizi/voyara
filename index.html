@@ -35,3 +35,44 @@
   </div>
   <p class="loader-text">Preparing your destination…</p>
 </div>
+
+<!-- ══════════ NAVIGATION ══════════ -->
+<header class="topnav" id="topnav">
+  <a class="brand" href="#/" aria-label="VOYARA home">
+    <svg class="brand-mark" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true">
+      <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      <ellipse cx="16" cy="16" rx="14" ry="6" fill="none" stroke="currentColor" stroke-width="1"/>
+      <circle cx="16" cy="16" r="3.4" fill="var(--gold)"/>
+    </svg>
+    <span class="brand-word">VOYARA</span>
+  </a>
+
+  <nav class="mainnav d-none d-lg-flex" aria-label="Primary">
+    <a href="#/" data-nav="home">Discover</a>
+    <a href="#/city" data-nav="city">City Intelligence</a>
+    <a href="#/places" data-nav="places">Places</a>
+    <a href="#/experiences" data-nav="experiences">Experiences</a>
+    <a href="#/costs" data-nav="costs">Travel Costs</a>
+    <a href="#/safety" data-nav="safety">Safety</a>
+    <a href="#/assistant" data-nav="assistant">AI Assistant</a>
+    <a href="#/translator" data-nav="translator">Translator</a>
+    <a href="#/trip" data-nav="trip">My Trip <span class="trip-count badge" id="tripCount">0</span></a>
+  </nav>
+
+  <div class="nav-actions">
+    <button class="icon-btn" id="globalSearchBtn" aria-label="Search">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    </button>
+    <button class="icon-btn" id="savedBtn" aria-label="Saved places">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6-5.4-3-5.4 3 1.1-6L3.2 9.4l6.1-.8z"/></svg>
+      <span class="saved-count" id="savedCount">0</span>
+    </button>
+    <button class="icon-btn" id="themeToggle" aria-label="Toggle dark and light mode">
+      <svg class="ic-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+      <svg class="ic-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+    <div class="city-chip d-none d-md-flex" id="cityChip" role="button" tabindex="0" aria-label="Current city">
+      <span class="city-chip-dot"></span><span id="cityChipName">Select a city</span>
+    </div>
+  </div>
+</header>
