@@ -24,3 +24,19 @@ const Search = {
       if (e.key === "Escape" && this.open) this.hide();
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); this.show(); }
     });
+    input.addEventListener("input", () => {
+      clearTimeout(this._debounce);
+      this._debounce = setTimeout(() => this.run(input.value), 220);
+    });
+    input.addEventListener("keydown", e => {
+      if (e.key === "ArrowDown") { e.preventDefault(); this._move(1); }
+      else if (e.key === "ArrowUp") { e.preventDefault(); this._move(-1); }
+      else if (e.key === "Enter") {
+        e.preventDefault();
+        const pick = this.items[this.cursor] || this.items[0];
+        if (pick) this._go(pick);
+      }
+    });
+
+    this.bindHero();
+  },
