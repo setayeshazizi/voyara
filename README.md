@@ -1,7 +1,3 @@
-# voyara
-بله. فقط همین را کامل **کپی کن و داخل `README.md` بگذار**:
-
-````markdown
 # 🌍 VOYARA
 
 > Your intelligent travel companion.
@@ -183,4 +179,4 @@ Information about safety, weather, flights, transportation, conflicts, and emerg
 VOYARA is developed as a modern tourism and travel technology project combining web development, APIs, artificial intelligence, maps, real-time information, image recognition, voice interaction, and translation.
 
 ```
-```
+
