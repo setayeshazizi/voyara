@@ -40,3 +40,11 @@ const Search = {
 
     this.bindHero();
   },
+  show() {
+    this.open = true;
+    const overlay = document.getElementById("searchOverlay");
+    const input = document.getElementById("globalSearchInput");
+    overlay.classList.add("open");
+    input.value = ""; this.run("");
+    setTimeout(() => input.focus(), 60);
+  },
