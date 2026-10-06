@@ -97,3 +97,75 @@
     <div class="search-results" id="searchResults"></div>
   </div>
 </div>
+
+<!-- ══════════ APP VIEWS ══════════ -->
+<main id="app">
+
+  <!-- 1 · LANDING / WORLD EXPLORER -->
+  <section class="view" id="view-home">
+    <div class="hero-explorer">
+      <div class="hero-copy">
+        <p class="eyebrow">Travel Intelligence</p>
+        <h1 class="display-hero">Where are you <em>going</em>?</h1>
+        <p class="hero-sub">Explore the world. Understand any city — its weather, safety, costs, culture and soul — before you ever board the plane.</p>
+        <div class="hero-search">
+          <input id="heroSearch" type="search" placeholder="Search a country or city — try “Kyoto”…" autocomplete="off" aria-label="Search destination">
+          <div class="hero-suggest" id="heroSuggest"></div>
+        </div>
+      </div>
+      <div id="worldMap" class="world-map" aria-label="Interactive world map"></div>
+    </div>
+    <div class="popular-strip">
+      <h2 class="section-label">Popular destinations</h2>
+      <div class="strip-scroll" id="popularStrip"></div>
+    </div>
+  </section>
+
+  <!-- 2 · CITY INTELLIGENCE DASHBOARD -->
+  <section class="view" id="view-city"><div id="cityRoot"></div></section>
+
+  <!-- 3 · TRAVEL COSTS -->
+  <section class="view" id="view-costs"><div id="costsRoot" class="container-page"></div></section>
+
+  <!-- 4 · HISTORY & CULTURE -->
+  <section class="view" id="view-places"><div id="placesRoot" class="container-page"></div></section>
+
+  <!-- 5 · EXPERIENCES -->
+  <section class="view" id="view-experiences"><div id="experiencesRoot" class="container-page"></div></section>
+
+  <!-- 6 · INTERACTIVE MAP -->
+  <section class="view" id="view-map">
+    <div class="map-layout">
+      <aside class="map-sidebar" id="mapSidebar"></aside>
+      <div id="cityMap" class="city-map" aria-label="City map"></div>
+    </div>
+  </section>
+
+  <!-- 7 · AI ASSISTANT -->
+  <section class="view" id="view-assistant"><div id="assistantRoot" class="assistant-layout container-page"></div></section>
+
+  <!-- 8 · AI PHOTO IDENTIFIER -->
+  <section class="view" id="view-photo"><div id="photoRoot" class="container-page"></div></section>
+
+  <!-- 9 · TRANSLATOR -->
+  <section class="view" id="view-translator"><div id="translatorRoot" class="container-page"></div></section>
+
+  <!-- 10 · MY TRIP -->
+  <section class="view" id="view-trip"><div id="tripRoot" class="container-page"></div></section>
+
+  <!-- 11 · SAVED -->
+  <section class="view" id="view-saved"><div id="savedRoot" class="container-page"></div></section>
+
+  <!-- SAFETY dedicated -->
+  <section class="view" id="view-safety"><div id="safetyRoot" class="container-page"></div></section>
+
+  <!-- EMERGENCY -->
+  <section class="view" id="view-emergency"><div id="emergencyRoot" class="container-page"></div></section>
+
+  <!-- HOTELS -->
+  <section class="view" id="view-hotels"><div id="hotelsRoot" class="container-page"></div></section>
+
+  <!-- EVENTS & NEWS -->
+  <section class="view" id="view-events"><div id="eventsRoot" class="container-page"></div></section>
+
+</main>
